@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* home page css open*/
+.main-nav {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 630px;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 15px;
+
+}
+
+ul li a:hover {
+    color: #948f8f;
+}
+
+ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.main-heading {
+    width: 50%;
+    margin: auto;
+    margin-top: 179px;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    text-align: center;
+    font-size: 51px;
+    font-weight: 900;
+}
+
+.pera {
+    text-align: center;
+}
+
+/* home page css close */
+
+.line {
+    height: 10px;
+    width: 100%;
+    background-color: gray;
+}
+
+/* this is first section css open */
+.card-round {
+    width: 100%;
+    height: 400px;
+    background-color: #f3f3f3;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item {
+    background-color: #fff;
+    position: relative;
+    height: 231px;
+    width: 125px;
+    /* border: 2px solid red; */
+    box-shadow: -1px 6px 15px;
+    margin: 5px;
+    border-radius: 69px;
+
+}
+
+.item::before {
+    position: absolute;
+    content: "This is my card icon and before";
+    display: block;
+    bottom: 0;
+    height: 50%;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0px 0px 59px 59px;
+    text-align: center;
+    /* background-image: url(/no1.svg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.item:hover.item::before {
+    z-index: 1;
+    background-color: transparent;
+    color: #fff;
+}
+
+.item:hover.item::after {
+    cursor: pointer;
+    top: 50%;
+    border-radius: 0px 0px 59px 59px;
+
+}
+
+.item::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    height: 50%;
+    background-color: #c45656;
+    width: 100%;
+    border-radius: 59px 59px 0px 0px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.item2::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    height: 50%;
+    background-color: rgb(192, 246, 147);
+    width: 100%;
+    border-radius: 59px 59px 0px 0px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.item3::after {
+    background-color: rgb(98, 227, 184);
+}
+
+.item4::after {
+    background-color: rgb(14, 149, 70);
+}
+
+.item5::after {
+    background-color: rgb(130, 191, 171);
+}
+
+.item6::after {
+    background-color: rgb(98, 201, 227);
+}
+
+.item7::after {
+    background-color: rgb(184, 232, 136);
+}
+
+.item8::after {
+    background-color: rgb(220, 156, 73);
+}
+
+.item9::after {
+    color: white;
+    background-color: rgb(255, 191, 15);
+}
+
+
+svg {
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 31px;
+    height: 48px;
+}
+
+/* this is first section css close */
+
+/* plen card css open */
+.plen-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background-color: #e7e3e3;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards {
+    position: relative;
+    height: 194px;
+    width: 305px;
+    /* border: 2px solid red; */
+    box-shadow: -1px 6px 15px;
+    border-radius: 9px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    display: flex;
+}
+
+.cards::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 39px;
+    width: 86px;
+    background-color: rgb(15, 207, 130);
+    border-radius: 0px 0px 119px 0px;
+    transition: all 1s;
+}
+
+.cards:hover.cards::before {
+    background-color: rgb(15, 207, 130);
+    cursor: pointer;
+    transform: matrix3d(1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 215, 151, 0, 1);
+}
+
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 13px;
+    z-index: 1;
+}
+
+.img-card {
+    width: 133px;
+    height: 124px;
+    margin: auto;
+}
+
+.img-logo {
+    width: 22px;
+}
+
+.btn1 {
+    padding: 8px;
+    width: 135px;
+    margin: 6px;
+    border-radius: 26px;
+    color: white;
+    background: black;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 21px;
+
+}
+
+/* plen crad css close */
+
+
+/* hcard main css open */
+.ret {
+    float: right;
+    text-decoration: none;
+    margin-right: 5px;
+    color: #fff;
+    background-color: rgb(87, 87, 228);
+    padding: 0 10px;
+    width: 45px;
+    border-radius: 9px;
+}
+
+.hcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #e7e3e3;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box::after {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    background-color: rgb(222, 63, 222);
+    bottom: 0;
+    right: 0;
+    border-radius: 34px 0px 0px 0px;
+    background-image: url(/no4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+.box:hover{
+    box-shadow: -1px 6px 15px;
+    cursor: pointer;
+}
+.box:hover.box::after{
+    height: 40px;
+    width: 40px;
+    box-shadow: -1px 6px 15px;
+}
+
+.box {
+    position: relative;
+    /* border: 2px solid red; */
+    background-color: #cccccc;
+    height: 330px;
+    width: 210px;
+    margin: 10px;
+    transition: all 1s;
+    border-radius: 8px;
+}
+
+.nedu {
+    width: 100%;
+    height: 200px;
+}
+
+.stare {
+    width: 15px;
+}
+
+.span {
+    font-size: 23px;
+}
+
+
+/* hcard main css close */
+
+
+
+/* main @media css open  */
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .main-heading {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 1301px) {
+    .card-round {
+        height: 100%;
+    }
+
+    .plen-card {
+        height: 100%;
+    }
+
+    /* .hcard{
+        height: 100%;
+        background-color: #c45656;
+    } */
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .container3 {
+        flex-direction: column;
+    }
+}
+
+/* main @media css close */
