@@ -1,2 +1,2 @@
 # before-after
-before after CSS style
+https://arbabriaz.github.io/before-after/
